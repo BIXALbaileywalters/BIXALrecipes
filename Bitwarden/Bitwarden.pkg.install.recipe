@@ -3,7 +3,10 @@
 <plist version="1.0">
 <dict>
 	<key>Description</key>
-	<string>Downloads the latest version of Bitwarden  and creates a package.</string>
+	<string>Downloads the latest version of Bitwarden, creates a package, and installs it.
+	Modified from: https://github.com/autopkg/drewdiver-recipes
+
+	</string>
 	<key>Identifier</key>
 	<string>com.github.grumpydrew.pkg.Bitwarden</string>
 	<key>Input</key>
