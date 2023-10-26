@@ -14,7 +14,7 @@
 	<key>MinimumVersion</key>
 	<string>0.6.1</string>
 	<key>ParentRecipe</key>
-	<string>github.baileywalters.pkg.ATLAS.ti</string>
+	<string>github.baileywalters.download.ATLAS.ti</string>
 	<key>Process</key>
 	<array>
 		<dict>
