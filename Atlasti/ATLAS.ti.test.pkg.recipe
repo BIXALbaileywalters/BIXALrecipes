@@ -5,7 +5,7 @@
 	<key>Description</key>
 	<string>Downloads the current release version of ATLAS.ti and creates a package.</string>
 	<key>Identifier</key>
-	<string>io.github.hjuutilainen.pkg.ATLAS.ti</string>
+	<string>github.baileywalters.pkg.ATLAS.ti</string>
 	<key>Input</key>
 	<dict>
 		<key>NAME</key>
