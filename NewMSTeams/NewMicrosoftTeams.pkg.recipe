@@ -30,7 +30,7 @@
                <string>%RECIPE_CACHE_DIR%/%VENDOR%_%SOFTWARETITLE%.pkg</string>
             </dict>
             <key>Processor</key>
-            <string>PkgPayloadExtractor</string>
+            <string>PkgPayloadUnpacker</string>
         </dict>
     </array>
 </dict>
