@@ -27,7 +27,7 @@
                <key>destination_path</key>
                <string>%RECIPE_CACHE_DIR%/unpack</string>
                <key>flat_pkg_path</key>
-               <string>%RECIPE_CACHE_DIR%/%VENDOR%_%SOFTWARETITLE%.pkg</string>
+               <string>%RECIPE_CACHE_DIR%/download/%VENDOR%_%SOFTWARETITLE%.pkg</string>
             </dict>
             <key>Processor</key>
             <string>FlatPkgUnpacker</string>
