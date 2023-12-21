@@ -31,6 +31,7 @@
             </dict>
             <key>Processor</key>
             <string>FlatPkgUnpacker</string>
+        </dict>
     </array>
 </dict>
 </plist>
