@@ -26,6 +26,7 @@
 			<dict>
 				<key>pkg_path</key>
 				<string>%RECIPE_CACHE_DIR%/%VENDOR%_%SOFTWARETITLE%.pkg</string>
+            </dict>
             <key>Processor</key>
             <string>Installer</string>
         </dict>
