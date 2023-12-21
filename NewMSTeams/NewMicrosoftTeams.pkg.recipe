@@ -26,11 +26,11 @@
             <dict>
                <key>destination_path</key>
                <string>%RECIPE_CACHE_DIR%/unpack</string>
-               <key>pkg_payload_path</key>
+               <key>flat_pkg_path</key>
                <string>%RECIPE_CACHE_DIR%/%VENDOR%_%SOFTWARETITLE%.pkg</string>
             </dict>
             <key>Processor</key>
-            <string>PkgPayloadUnpacker</string>
+            <string>FlatPkgUnpacke</string>
         </dict>
     </array>
 </dict>
