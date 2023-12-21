@@ -10,6 +10,10 @@
     <dict>
         <key>NAME</key>
         <string>Microsoft Teams</string>
+        <key>VENDOR</key>
+        <string>Microsoft</string>
+        <key>SOFTWARETITLE</key>
+        <string>NewTeams</string>
     </dict>
     <key>MinimumVersion</key>
     <string>1.0.0</string>
@@ -18,6 +22,10 @@
     <key>Process</key>
     <array>
         <dict>
+            <key>Arguments</key>
+			<dict>
+				<key>pkg_path</key>
+				<string>%RECIPE_CACHE_DIR%/%VENDOR%_%SOFTWARETITLE%.pkg</string>
             <key>Processor</key>
             <string>Installer</string>
         </dict>
