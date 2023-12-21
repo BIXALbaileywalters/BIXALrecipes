@@ -5,7 +5,7 @@
     <key>Description</key>
     <string>Downloads the latest version of Microsoft's Teams installer package and installs it.</string>
     <key>Identifier</key>
-    <string>com.github.BIXALBaileyWalters.install.newmicrosoftteams</string>
+    <string>com.github.BIXALBaileyWalters.pkg.newmicrosoftteams</string>
     <key>Input</key>
     <dict>
         <key>NAME</key>
@@ -23,13 +23,14 @@
     <array>
         <dict>
             <key>Arguments</key>
-			<dict>
-				<key>pkg_path</key>
-				<string>%RECIPE_CACHE_DIR%/unpack/*.pkg</string>
+            <dict>
+               <key>destination_path</key>
+               <string>%RECIPE_CACHE_DIR%/unpack</string>
+               <key>flat_pkg_path</key>
+               <string>%RECIPE_CACHE_DIR%/%VENDOR%_%SOFTWARETITLE%.pkg</string>
             </dict>
             <key>Processor</key>
-            <string>Installer</string>
-        </dict>
+            <string>FlatPkgUnpacker</string>
     </array>
 </dict>
 </plist>
