@@ -3,9 +3,9 @@
 <plist version="1.0">
 <dict>
     <key>Description</key>
-    <string>Downloads and installs Jan.AI for Apple Silicon</string>
+    <string>Downloads and installs Jan.AI for Intel Macs</string>
     <key>Identifier</key>
-    <string>com.github.BIXALBaileyWalters.install.JanAI-arm</string>
+    <string>com.github.BIXALBaileyWalters.install.JanAI-x64</string>
     <key>Input</key>
     <dict>
         <key>NAME</key>
@@ -25,7 +25,7 @@
                 <key>github_repo</key>
                 <string>janhq/jan</string>
                 <key>asset_regex</key>
-                <string>jan-mac-arm64-.*\.dmg$</string> 
+                <string>jan-mac-x64-.*\.dmg$</string> 
             </dict>
         </dict>
         <dict>
