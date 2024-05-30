@@ -3,39 +3,31 @@
 <plist version="1.0">
    <dict>
       <key>Description</key>
-      <string>Downloads the latest version of Microsoft's Teams for Work or School installer package and renames the package.</string>
+      <string>Downloads the latest version of Microsoft's Teams installer package and renames the package.</string>
       <key>Identifier</key>
-      <string>com.github.rtrouton.pkg.microsoftteamsforworkorschool</string>
+      <string>com.github.rtrouton.pkg.microsoftteams</string>
       <key>Input</key>
       <dict>
          <key>NAME</key>
-         <string>Microsoft Teams for Work or School</string>
+         <string>Microsoft Teams</string>
          <key>VENDOR</key>
          <string>Microsoft</string>
-         <key>SOFTWARETITLE1</key>
+         <key>SOFTWARETITLE</key>
          <string>Teams</string>
-         <key>SOFTWARETITLE2</key>
-         <string>For</string>
-         <key>SOFTWARETITLE3</key>
-         <string>Work</string>
-         <key>SOFTWARETITLE4</key>
-         <string>Or</string>
-         <key>SOFTWARETITLE5</key>
-         <string>School</string>
          <key>VERSIONTYPE</key>
          <string>CFBundleShortVersionString</string>
       </dict>
       <key>MinimumVersion</key>
       <string>1.0.0</string>
       <key>ParentRecipe</key>
-      <string>com.github.rtrouton.download.microsoftteamsforworkorschool</string>
+      <string>com.github.rtrouton.download.microsoftteams</string>
       <key>Process</key>
       <array>
          <dict>
             <key>Arguments</key>
             <dict>
                <key>destination_path</key>
-               <string>%RECIPE_CACHE_DIR%/downloads/unpack</string>
+               <string>%RECIPE_CACHE_DIR%/unpack</string>
                <key>flat_pkg_path</key>
                <string>%pathname%</string>
             </dict>
@@ -46,7 +38,7 @@
             <key>Arguments</key>
             <dict>
                <key>pattern</key>
-               <string>%RECIPE_CACHE_DIR%/downloads/unpack/*Teams*.pkg</string>
+               <string>%RECIPE_CACHE_DIR%/unpack/*Teams*.pkg</string>
             </dict>
             <key>Processor</key>
             <string>FileFinder</string>
@@ -55,7 +47,7 @@
             <key>Arguments</key>
             <dict>
                <key>destination_path</key>
-               <string>%RECIPE_CACHE_DIR%/downloads/payload</string>
+               <string>%RECIPE_CACHE_DIR%/payload</string>
                <key>pkg_payload_path</key>
                <string>%found_filename%/Payload</string>
             </dict>
@@ -66,7 +58,7 @@
             <key>Arguments</key>
             <dict>
                <key>input_plist_path</key>
-               <string>%RECIPE_CACHE_DIR%/downloads/payload/Microsoft Teams (work or school).app/Contents/Info.plist</string>
+               <string>%RECIPE_CACHE_DIR%/payload/Microsoft Teams.app/Contents/Info.plist</string>
                <key>plist_version_key</key>
                <string>%VERSIONTYPE%</string>
             </dict>
@@ -81,7 +73,7 @@
                <key>source_pkg</key>
                <string>%pathname%</string>
                <key>pkg_path</key>
-               <string>%RECIPE_CACHE_DIR%/%VENDOR%_%SOFTWARETITLE1%_%SOFTWARETITLE2%_%SOFTWARETITLE3%_%SOFTWARETITLE4%_%SOFTWARETITLE5%_%version%.pkg</string>
+               <string>%RECIPE_CACHE_DIR%/%VENDOR%_%SOFTWARETITLE%_%version%.pkg</string>
             </dict>
          </dict>
          <dict>
@@ -91,8 +83,8 @@
             <dict>
                <key>path_list</key>
                <array>
-                  <string>%RECIPE_CACHE_DIR%/downloads/unpack</string>
-                  <string>%RECIPE_CACHE_DIR%/downloads/payload</string>
+                  <string>%RECIPE_CACHE_DIR%/unpack</string>
+                  <string>%RECIPE_CACHE_DIR%/payload</string>
                </array>
             </dict>
          </dict>
