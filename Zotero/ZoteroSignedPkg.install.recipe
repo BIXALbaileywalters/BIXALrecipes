@@ -15,7 +15,7 @@
 	<key>MinimumVersion</key>
     <string>1.0</string>
 	<key>ParentRecipe</key>
-	<string>com.github.BixalCodySauber.download.zotero</string>
+	<string>com.github.BixalCodySauber.pkg.zotero</string>
 	<key>Process</key>
 	<array>
 		<dict>
