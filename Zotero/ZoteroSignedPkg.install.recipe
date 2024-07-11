@@ -22,7 +22,7 @@
 			<key>Arguments</key>
 			<dict>
 				<key>pkg_path</key>
-                <string>/Users/Shared/autopkg/cache/com.github.BixalCodySauber.install.zotero/*.pkg</string>
+                <string>%pkg_path%</string>
 			</dict>
 			<key>Processor</key>
 			<string>Installer</string>
