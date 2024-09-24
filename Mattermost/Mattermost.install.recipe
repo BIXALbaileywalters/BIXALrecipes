@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Description</key>
+	<string>Downloads the latest version of Mattermost. Modified from Peshay</string>
+	<key>Identifier</key>
+	<string>com.github.peshay.install.Mattermost</string>
+	<key>Input</key>
+	<dict>
+		<key>NAME</key>
+		<string>Mattermost</string>
+		<key>INSTALL_DESTINATION</key>
+		<string>/Applications</string>
+		
+<!--SELECT YOUR OS VERSION AND INPUT BELOW
+	"mac-universal" for macOS Universal
+	"mac-arm64" for macOS 64-Bit ARM
+	"mac-m1" for macOS Apple Silicon
+	"win" for WINDOWS EXE
+	"x64" for WINDOWS 64 BIT MSI
+	"x86" for WINDOWS 32 BIT MSI
+	"linux-ia32" for LINUX 32 BIT
+	"linux-x64" for LINUX 64 BIT
+-->
+
+	<key>os</key>
+	<string>mac-universal</string><!-- <<<<<< INPUT HERE <<<<<< -->
+	</dict>
+	<key>MinimumVersion</key>
+    	<string>0.6.1</string>
+	<key>Process</key>
+	<array>
+        <dict>
+                <key>Arguments</key>
+                <dict>
+                        <key>github_repo</key>
+                        <string>mattermost/desktop</string>
+                        <key>asset_regex</key>
+                        <string>(mattermost-desktop-[^"]*-%os%\.[^"]*)</string>
+                </dict>
+                        <key>Processor</key>
+                        <string>GitHubReleasesInfoProvider</string>
+        </dict>
+		<dict>
+			<key>Processor</key>
+			<string>URLDownloader</string>
+		</dict>
+		<dict>
+			<key>Processor</key>
+			<string>EndOfCheckPhase</string>
+		</dict>
+		<dict>
+            <key>Processor</key>
+            <string>InstallFromDMG</string>
+            <key>Arguments</key>
+            <dict>
+                <key>dmg_path</key>
+                <string>%pathname%</string>
+                <key>items_to_copy</key>
+                <array>
+                  <dict>
+                    <key>source_item</key>
+                    <string>Mattermost.app</string>
+                    <key>destination_path</key>
+                    <string>%INSTALL_DESTINATION%</string>
+                    <key>user</key>
+                    <string>root</string>
+                    <key>group</key>
+                    <string>wheel</string>
+                    <key>mode</key>
+                    <string>0755</string>
+                  </dict>
+                </array>
+            </dict>
+
+	</array>
+</dict>
+</plist>
