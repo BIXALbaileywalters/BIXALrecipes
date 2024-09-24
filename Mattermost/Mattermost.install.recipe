@@ -12,8 +12,8 @@
 		<string>Mattermost</string>
 		<key>INSTALL_DESTINATION</key>
 		<string>/Applications</string>
-		
-<!--SELECT YOUR OS VERSION AND INPUT BELOW
+
+	<!--SELECT YOUR OS VERSION AND INPUT BELOW
 	"mac-universal" for macOS Universal
 	"mac-arm64" for macOS 64-Bit ARM
 	"mac-m1" for macOS Apple Silicon
@@ -24,8 +24,8 @@
 	"linux-x64" for LINUX 64 BIT
 -->
 
-	<key>os</key>
-	<string>mac-universal</string><!-- <<<<<< INPUT HERE <<<<<< -->
+		<key>os</key>
+		<string>mac-universal</string><!-- <<<<<< INPUT HERE <<<<<< -->
 	</dict>
 	<key>MinimumVersion</key>
     	<string>0.6.1</string>
