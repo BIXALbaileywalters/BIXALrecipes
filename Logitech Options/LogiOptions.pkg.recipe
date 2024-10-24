@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Description</key>
+	<string>Packages the latest verison of Logitech Options (Bluetooth and USB)
+</string>
+    <key>Identifier</key>
+    <string>com.github.BixalCodySauber.pkg.LogiOptions</string>
+    <key>Input</key>
+    <dict>
+        <key>NAME</key>
+        <string>LogiOptions</string>
+    </dict>
+    <key>MinimumVersion</key>
+    <string>1.0</string>
+    <key>ParentRecipe</key>
+    <string>com.github.BixalCodySauber.download.LogiOptions</string>
+    <key>Process</key>
+    <array>
+        <dict>
+            <key>Processor</key>
+            <string>AppPkgCreator</string>
+        </dict>
+    </array>
+</dict>
+</plist>
