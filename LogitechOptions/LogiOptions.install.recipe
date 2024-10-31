@@ -14,14 +14,14 @@
 	<key>MinimumVersion</key>
     <string>1.0</string>
 	<key>ParentRecipe</key>
-	<string>com.github.BixalCodySauber.pkg.LogiOptions</string>
+	<string>com.github.BixalCodySauber.download.LogiOptions</string>
 	<key>Process</key>
 	<array>
 		<dict>
 			<key>Arguments</key>
 			<dict>
 				<key>pkg_path</key>
-                <string>%pkg_path%</string>
+                <string>/Users/Shared/autopkg/cache/com.github.BixalCodySauber.download.LogiOptions/downloads/LogiMgr/*.app/LogiMgr.pkg </string>
 			</dict>
 			<key>Processor</key>
 			<string>Installer</string>
