@@ -5,7 +5,7 @@
 	<key>Description</key>
 	<string>Installs the latest verison of Logitech Options (Bluetooth and USB)
 	<key>Identifier</key>
-	<string>com.github.BixalCodySauber.install.LogiOptions</string>
+    <string>com.github.BixalCodySauber.install.LogiOptions</string>
 	<key>Input</key>
 	<dict>
 		<key>RELEASE</key>
