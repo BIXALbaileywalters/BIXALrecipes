@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>Description</key>
-	<string>Installs the latest verison of Logitech Options (Bluetooth and USB)
+	<string>Installs the latest verison of Logitech Options (Bluetooth and USB)</string>
 	<key>Identifier</key>
     <string>com.github.BixalCodySauber.install.LogiOptions</string>
 	<key>Input</key>
