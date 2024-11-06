@@ -34,7 +34,7 @@
                 <key>purge_destination</key>
                 <true/>
                 <key>destination_path</key>
-                <string>%RECIPE_CACHE_DIR%/LogiMgr</string>
+                <string>%RECIPE_CACHE_DIR%/downloads</string>
             </dict>
         </dict>
         <dict>
@@ -61,6 +61,16 @@
             <key>Processor</key>
             <string>EndOfCheckPhase</string>
         </dict>
+        <dict>
+            <key>Processor</key>
+            <string>FileMover</string>
+            <key>Arguments</key>
+            <dict>
+                <key>source</key>
+                <string>%found_filename%</string>
+                <key>target</key>
+                <key>%RECIPE_CACHE_DIR%/downloads/LogiInstaller.app</key>
+            </dict>
         </array>
 </dict>
 </plist>
