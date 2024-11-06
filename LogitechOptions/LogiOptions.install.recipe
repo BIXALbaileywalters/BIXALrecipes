@@ -30,7 +30,7 @@
 				<key>source</key>
 				<string>%found_filename%</string>
 				<key>target</key>
-				<string>%RECIPE_CACHE_DIR%/LogiInstaller.app</string>
+				<string>%RECIPE_CACHE_DIR%/LogiInstaller</string>
 			</dict>
 			<key>Processor</key>
 			<string>FileMover</string>
