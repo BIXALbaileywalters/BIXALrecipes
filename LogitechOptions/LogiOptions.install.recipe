@@ -20,8 +20,15 @@
 		<dict>
 			<key>Arguments</key>
 			<dict>
+				<key>pattern</key>
+				<string>LogiMgr.pkg</string>
+			</dict>
+			<key>Processor</key>
+			<string>FileFinder</string>
+			<key>Arguments</key>
+			<dict>
 				<key>pkg_path</key>
-                <string>/Users/Shared/autopkg/cache/com.github.BixalCodySauber.download.LogiOptions/downloads/LogiMgr/*.app/LogiMgr.pkg </string>
+                <string>%found_filename%</string>
 			</dict>
 			<key>Processor</key>
 			<string>Installer</string>
