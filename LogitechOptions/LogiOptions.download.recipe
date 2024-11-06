@@ -38,14 +38,14 @@
                     <key>purge_destination</key>
                     <false/>
                     <key>destination_path</key>
-                    <string>%RECIPE_CACHE_DIR%/LogiMgr-unzipped/</string>
+                    <string>%RECIPE_CACHE_DIR%/downloads/LogiMgr-unzipped/</string>
                 </dict>
             </dict>
             <dict>
                 <key>Arguments</key>
                 <dict>
                     <key>pattern</key>
-                    <string>%RECIPE_CACHE_DIR%/LogiMgr-unzipped/LogiMgr Installer*</string>
+                    <string>%RECIPE_CACHE_DIR%/downloads/LogiMgr-unzipped/LogiMgr Installer*</string>
                 </dict>
                 <key>Processor</key>
                 <string>FileFinder</string>
