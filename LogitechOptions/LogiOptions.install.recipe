@@ -21,14 +21,23 @@
 			<key>Arguments</key>
 			<dict>
 				<key>pattern</key>
-				<string>LogiMgr.pkg</string>
+				<string>LogiMgr*.app</string>
 			</dict>
 			<key>Processor</key>
 			<string>FileFinder</string>
 			<key>Arguments</key>
 			<dict>
+				<key>source</key>
+				<string>%found_filename%</string>
+				<key>target</key>
+				<string>%RECIPE_CACHE_DIR%/LogiInstaller.app</string>
+			</dict>
+			<key>Processor</key>
+			<string>FileMover</string>
+			<key>Arguments</key>
+			<dict>
 				<key>pkg_path</key>
-                <string>%found_filename%</string>
+                <string>%RECIPE_CACHE_DIR%/LogiInstaller.app/Contents/Resources/LogiMgr.pkg</string>
 			</dict>
 			<key>Processor</key>
 			<string>Installer</string>
