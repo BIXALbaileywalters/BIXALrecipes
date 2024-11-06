@@ -71,6 +71,7 @@
                 <key>target</key>
                 <string>%RECIPE_CACHE_DIR%/downloads/LogiInstaller.app</string>
             </dict>
+        </dict>
         </array>
 </dict>
 </plist>
