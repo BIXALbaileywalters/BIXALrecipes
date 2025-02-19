@@ -56,7 +56,7 @@
 					<key>pkg_path</key>
 					<string>%RECIPE_CACHE_DIR%/DMG-contents/</string>
 				</dict>
-		<dict>
+		</dict>
 			<key>Processor</key>
 			<string>EndOfCheckPhase</string>
 		</dict>
