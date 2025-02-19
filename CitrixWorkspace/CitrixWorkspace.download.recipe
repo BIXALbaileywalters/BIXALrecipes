@@ -48,7 +48,7 @@
                 <key>Arguments</key>
                 <dict>
                     <key>archive_path</key>
-                    <string>%RECIPE_CACHE_DIR%/%NAME%.dmg</string>
+                    <string>%RECIPE_CACHE_DIR%/downloads/%NAME%.dmg</string>
 					<key>archive_format</key>
 					<string>tar_bzip2</string>
                     <key>purge_destination</key>
