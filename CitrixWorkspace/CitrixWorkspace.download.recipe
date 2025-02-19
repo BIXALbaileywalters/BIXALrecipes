@@ -43,20 +43,22 @@
 			</dict>
 		</dict>
 		<dict>
+			<dict>
                 <key>Processor</key>
-                <string>Unarchiver</string>
-                <key>Arguments</key>
-                <dict>
-                    <key>archive_path</key>
-                    <string>%RECIPE_CACHE_DIR%/downloads/%NAME%.dmg</string>
-					<key>archive_format</key>
-					<string>tar_bzip2</string>
-                    <key>purge_destination</key>
-                    <false/>
-                    <key>destination_path</key>
-                    <string>%RECIPE_CACHE_DIR%/DMG-contents/</string>
-                </dict>
+                <string>DmgMounter</string>
             </dict>
+		<dict>
+			<dict>
+				<key>Processor</key>
+				<string>PkgCopier</string>
+				<key>Arguments</key>
+				<dict>
+					<key>source_pkg</key>
+					<string>Install Citrix Workspace.pkg</string>
+					<key>pkg_path</key>
+					<string>%RECIPE_CACHE_DIR%/DMG-contents/</string>
+				</dict>
+			</dict>	
 		<dict>
 			<key>Processor</key>
 			<string>EndOfCheckPhase</string>
