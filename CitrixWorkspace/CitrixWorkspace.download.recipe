@@ -55,7 +55,7 @@
                     			<key>source_item</key>
                     			<string>Install Citrix Workspace.pkg</string>
                     			<key>destination_path</key>
-                    			<string>%RECIPE_CACHE_DIR%/DMG-contents/</string>
+                    			<string>%RECIPE_CACHE_DIR%</string>
                   			</dict>
                 		</array>
 				</dict>
