@@ -48,7 +48,7 @@
                 <key>Arguments</key>
                 <dict>
                     <key>archive_path</key>
-                    <string>%RECIPE_CACHE_DIR%/downloads/LogiMgr.zip</string>
+                    <string>%RECIPE_CACHE_DIR%/%NAME%.dmg</string>
                     <key>purge_destination</key>
                     <false/>
                     <key>destination_path</key>
