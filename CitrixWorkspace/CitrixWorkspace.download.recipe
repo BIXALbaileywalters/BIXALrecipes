@@ -47,6 +47,7 @@
                 <key>Processor</key>
                 <string>DmgMounter</string>
             </dict>
+		</dict>
 		<dict>
 			<dict>
 				<key>Processor</key>
