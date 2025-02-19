@@ -45,8 +45,6 @@
 		<dict>
 			<key>Processor</key>
             <string>DmgMounter</string>
-        </dict>
-		<dict>
 			<key>Processor</key>
 			<string>PkgCopier</string>
 			<key>Arguments</key>
