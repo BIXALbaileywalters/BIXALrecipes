@@ -43,23 +43,19 @@
 			</dict>
 		</dict>
 		<dict>
-			<dict>
-                <key>Processor</key>
-                <string>DmgMounter</string>
-            </dict>
-		</dict>
+			<key>Processor</key>
+            <string>DmgMounter</string>
+        </dict>
 		<dict>
-			<dict>
-				<key>Processor</key>
-				<string>PkgCopier</string>
-				<key>Arguments</key>
+			<key>Processor</key>
+			<string>PkgCopier</string>
+			<key>Arguments</key>
 				<dict>
 					<key>source_pkg</key>
 					<string>Install Citrix Workspace.pkg</string>
 					<key>pkg_path</key>
 					<string>%RECIPE_CACHE_DIR%/DMG-contents/</string>
 				</dict>
-			</dict>	
 		<dict>
 			<key>Processor</key>
 			<string>EndOfCheckPhase</string>
