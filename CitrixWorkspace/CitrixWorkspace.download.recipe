@@ -70,7 +70,7 @@
 			<key>Arguments</key>
 			<dict>
 				<key>input_path</key>
-				<string>%RECIPE_CACHE_DIR%/DMG-contents/Install Citrix Workspace.pkg</string>
+				<string>%RECIPE_CACHE_DIR%/downloads/Install Citrix Workspace.pkg</string>
 				<key>expected_authority_names</key>
 				<array>
 					<string>Developer ID Installer: Citrix Systems, Inc. (S272Y5R93J)</string>
