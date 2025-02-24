@@ -46,19 +46,19 @@
 			<key>Processor</key>
 			<string>InstallFromDMG</string>
 			<key>Arguments</key>
-				<dict>
-					<key>dmg_path</key>
-					<string>%RECIPE_CACHE_DIR%/downloads/%NAME%.dmg</string>
-					<key>items_to_copy</key>
-						<array>
-                  			<dict>
-                    			<key>source_item</key>
-                    			<string>Install Citrix Workspace.pkg</string>
-                    			<key>destination_path</key>
-                    			<string>%RECIPE_CACHE_DIR%</string>
-                  			</dict>
-                		</array>
-				</dict>
+			<dict>
+				<key>dmg_path</key>
+				<string>%RECIPE_CACHE_DIR%/downloads/%NAME%.dmg</string>
+				<key>items_to_copy</key>
+				<array>
+                  	<dict>
+                    	<key>source_item</key>
+                    	<string>Install Citrix Workspace.pkg</string>
+                    	<key>destination_path</key>
+                    	<string>%RECIPE_CACHE_DIR%/downloads/</string>
+                  	</dict>
+                </array>
+			</dict>
 		</dict>
 		<dict>
 			<key>Processor</key>
