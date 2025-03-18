@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>Description</key>
+    <string>Downloads the latest version of Jamf Connect.</string>
+    <key>Identifier</key>
+    <string>com.github.BIXALbaileywalters.download.JamfConnect</string>
+    <key>Input</key>
+    <dict>
+        <key>APP_FILENAME</key>
+        <string>JamfConnect</string>
+        <key>DOWNLOAD_URL</key>
+        <string>https://files.jamfconnect.com/JamfConnect.dmg</string>
+        <key>NAME</key>
+        <string>Jamf Connect</string>
+    </dict>
+    <key>MinimumVersion</key>
+    <string>1.0.0</string>
+    <key>Process</key>
+    <array>
+        <dict>
+            <key>Arguments</key>
+            <dict>
+                <key>filename</key>
+                <string>%APP_FILENAME%.dmg</string>
+                <key>url</key>
+                <string>%DOWNLOAD_URL%</string>
+            </dict>
+            <key>Processor</key>
+            <string>URLDownloader</string>
+        </dict>
+        <dict>
+            <key>Processor</key>
+            <string>InstallFromDMG</string>
+			<key>Arguments</key>
+			<dict>
+				<key>dmg_path</key>
+				<string>%RECIPE_CACHE_DIR%/downloads/%APP_FILENAME%.dmg</string>
+				<key>items_to_copy</key>
+				<array>
+                  	<dict>
+                    	<key>source_item</key>
+                    	<string>JamfConnect.pkg</string>
+                    	<key>destination_path</key>
+                    	<string>%RECIPE_CACHE_DIR%/downloads/</string>
+                  	</dict>
+                </array>
+			</dict>
+		</dict>
+        <dict>
+			<key>Processor</key>
+			<string>CodeSignatureVerifier</string>
+			<key>Arguments</key>
+			<dict>
+				<key>input_path</key>
+				<string>%RECIPE_CACHE_DIR%/downloads/JamfConnect.pkg</string>
+				<key>expected_authority_names</key>
+				<array>
+					<string>Developer ID Installer: JAMF Software (483DWKW443)</string>
+					<string>Developer ID Certification Authority</string>
+					<string>Apple Root CA</string>
+				</array>
+			</dict>
+		</dict>
+        <dict>
+            <key>Processor</key>
+            <string>EndOfCheckPhase</string>
+        </dict>
+    </array>
+</dict>
+</plist>
