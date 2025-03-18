@@ -26,6 +26,15 @@
 			<key>Processor</key>
 			<string>Installer</string>
 		</dict>
+		<dict>
+			<key>Arguments</key>
+			<dict>
+				<key>pkg_path</key>
+                <string>%RECIPE_CACHE_DIR%/downloads/JamfConnectLaunchAgent.pkg</string>
+			</dict>
+			<key>Processor</key>
+			<string>Installer</string>
+		</dict>
 	</array>
 </dict>
 </plist>
