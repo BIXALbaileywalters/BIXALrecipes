@@ -36,7 +36,7 @@ class GetUserHome(Processor):
         """Main process."""
         try:
             current_user = subprocess.run(['stat', '-f %Su /dev/console'], stdout=subprocess.PIPE).stdout.decode('utf-8').rstrip().rstrip('/dev/console').strip()
-            user_home = f'/Users/{current_user}/'
+            user_home = f'/Users/{current_user}'
             self.env["user_home"] = user_home
             self.env["current_user"] = current_user
             self.output(f"Current user: {current_user}")
