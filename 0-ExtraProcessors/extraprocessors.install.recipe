@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Description</key>
+	<string>Installs the latest verison of Logitech Options (Bluetooth and USB)</string>
+	<key>Identifier</key>
+    <string>com.github.BIXALbaileywalters.extraprocessors</string>
+	<key>MinimumVersion</key>
+    <string>1.0</string>
+	<key>Process</key>
+	<array>
+	</array>
+</dict>
+</plist>
