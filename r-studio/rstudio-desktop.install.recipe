@@ -47,6 +47,7 @@ MUNKI_ICON should be overridden with your icon name.
 	<string>com.github.hansen-m.download.RStudio</string>
     <key>Process</key>
     <array>
+        <dict>
             <key>Processor</key>
             <string>EndOfCheckPhase</string>
         </dict>
