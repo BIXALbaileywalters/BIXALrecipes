@@ -15,6 +15,7 @@
 # limitations under the License.
 
 import os
+import subprocess
 
 from autopkglib import Processor  # pylint: disable=import-error
 
@@ -35,7 +36,7 @@ class GetUserHome(Processor):
         """Main process."""
         try:
             user_home = os.path.expanduser("~")
-            current_user = os.getlogin()
+            current_user = subprocess.run(['stat', '-f %Su /dev/console'], stdout=subprocess.PIPE).stdout.decode('utf-8').rstrip().rstrip('/dev/console')
             self.env["user_home"] = user_home
             self.env["current_user"] = current_user
             self.output(f"Current user: {current_user}")
