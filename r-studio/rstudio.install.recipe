@@ -43,7 +43,6 @@
 				    <key>expected_authority_names</key>
 				    <array>
 					    <string>Developer ID Installer: Simon Urbanek (VZLD955F6P)</string>
-					    <string>Apple Root CA</string>
 				    </array>
 				<key>input_path</key>
 				<string>%pathname%</string>
