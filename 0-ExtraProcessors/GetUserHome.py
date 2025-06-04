@@ -35,7 +35,7 @@ class GetUserHome(Processor):
         """Main process."""
         try:
             user_home = os.path.expanduser("~")
-            current_user = os.path.basename(user_home)
+            current_user = os.getlogin()
             self.env["user_home"] = user_home
             self.env["current_user"] = current_user
             self.output(f"Current user: {current_user}")
