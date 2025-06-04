@@ -45,7 +45,6 @@ MUNKI_ICON should be overridden with your icon name.
     <string>0.5.0</string>
     <key>ParentRecipe</key>
 	<string>com.github.hansen-m.download.RStudio</string>
-	<key>Process</key>
     <key>Process</key>
     <array>
             <key>Processor</key>
