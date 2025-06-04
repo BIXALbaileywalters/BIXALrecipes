@@ -38,8 +38,6 @@ MUNKI_ICON should be overridden with your icon name.
     <dict>
         <key>NAME</key>
 		<string>RStudio</string>
-        <key>INSTALL_DESTINATION</key>
-        <string>/Applications</string>
     </dict>
     <key>MinimumVersion</key>
     <string>0.5.0</string>
@@ -47,6 +45,10 @@ MUNKI_ICON should be overridden with your icon name.
 	<string>com.github.hansen-m.download.RStudio</string>
     <key>Process</key>
     <array>
+        <dict>
+            <key>Processor</key>
+            <string>com.github.BIXALbaileywalters.extraprocessors/GetUserHome</string>
+        </dict>
         <dict>
             <key>Processor</key>
             <string>EndOfCheckPhase</string>
@@ -64,11 +66,11 @@ MUNKI_ICON should be overridden with your icon name.
                     <key>source_item</key>
                     <string>RStudio.app</string>
                     <key>destination_path</key>
-                    <string>%INSTALL_DESTINATION%</string>
+                    <string>%user_home%/Applications</string>
                     <key>user</key>
-                    <string>root</string>
+                    <string>%current_user%</string>
                     <key>group</key>
-                    <string>wheel</string>
+                    <string>staff</string>
                     <key>mode</key>
                     <string>0755</string>
                   </dict>
