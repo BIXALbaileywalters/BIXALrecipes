@@ -19,6 +19,8 @@
     </dict>
     <key>MinimumVersion</key>
     <string>0.5.1</string>
+    <key>ParentRecipe</key>
+	<string>com.github.BIXALbaileywalters.install.rstudio</string>
     <key>Process</key>
     <array>
        <dict>
