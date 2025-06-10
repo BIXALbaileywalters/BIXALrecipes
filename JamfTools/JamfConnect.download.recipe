@@ -41,7 +41,7 @@
 				<array>
                   	<dict>
                     	<key>source_item</key>
-                    	<string>JamfConnect.pkg</string>
+                    	<string>JamfConnectLogin.pkg</string>
                     	<key>destination_path</key>
                     	<string>%RECIPE_CACHE_DIR%/downloads/</string>
                   	</dict>
