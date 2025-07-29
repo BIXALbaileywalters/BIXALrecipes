@@ -23,7 +23,9 @@
             <key>Arguments</key>
             <dict>
                 <key>curl_opts</key>
-                <string>--compressed</string>
+                <array>
+                    <string>--compressed</string>
+                </array>
                 <key>url</key>
                 <string>%DOWNLOAD_MIRROR%</string>
             </dict>
