@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>Description</key>
+    <string>Note: munkitools does not include a code signature. If your
+organization requires code signature, it is recommend to internally sign
+the application.
+
+Downloads and imports the latest version of the Munki tools via
+the official releases listing on GitHub. You can set INCLUDE_PRERELEASES
+to any value to have this recipe pull prerelease versions.
+
+Note that Munki 4+ includes an additional component pkg, munkitools_app_usage.
+This recipe imports this to the Munki with the appropriate 'requires' key,
+however as it is considered an optional component, this recipe does not
+add it as an update_for any Munki component. Admins should add
+munkitools_app_usage to a manifest manually if its installation on clients
+is desired.
+
+Note that Munki 4+ offers the option to include Python to be embedded 
+in preparation for macOS no longer including the Python environment in future OSes.
+This recipe includes the embedded Python installation and adds the Python package
+as a requirement to the other munki pkginfos.
+
+This recipe cannot be overridden to pull a download from an alternate location.
+
+The GitHubReleasesInfoProvider processor used by this recipe also
+respects an input variable: 'sort_by_highest_tag_names', which
+if set, will ignore the post dates of the releases and instead sort
+descending by tag names according to LooseVersion semantics.
+
+MUNKI_ICON should be overridden with your icon name.
+</string>
+    <key>Identifier</key>
+    <string>com.github.BIXALBaileyWalters.install.vonage</string>
+    <key>Input</key>
+    <dict>
+        <key>NAME</key>
+		<string>Vonage</string>
+    </dict>
+    <key>MinimumVersion</key>
+    <string>0.5.0</string>
+    <key>ParentRecipe</key>
+	<string>com.github.BIXALBaileyWalters.download.vonage</string>
+    <key>Process</key>
+    <array>
+        <dict>
+            <key>Processor</key>
+            <string>com.github.BIXALbaileywalters.extraprocessors/GetUserHome</string>
+        </dict>
+        <dict>
+            <key>Processor</key>
+            <string>EndOfCheckPhase</string>
+        </dict>
+        <dict>
+            <key>Processor</key>
+            <string>InstallFromDMG</string>
+            <key>Arguments</key>
+            <dict>
+                <key>dmg_path</key>
+                <string>%pathname%</string>
+                <key>items_to_copy</key>
+                <array>
+                  <dict>
+                    <key>source_item</key>
+                    <string>Vonage Business.app</string>
+                    <key>destination_path</key>
+                    <string>%user_home%/Applications</string>
+                    <key>user</key>
+                    <string>%current_user%</string>
+                    <key>group</key>
+                    <string>staff</string>
+                    <key>mode</key>
+                    <string>0755</string>
+                  </dict>
+                </array>
+            </dict>
+        </dict>
+    </array>
+</dict>
+</plist>
