@@ -29,7 +29,7 @@
                 <key>asset_regex</key>
                 <string>Jan_.*_universal\.dmg</string>
                 <key>latest_only</key>
-                <bool>True</bool>
+                <string>True</string>
             </dict>
         </dict>
         <dict>
