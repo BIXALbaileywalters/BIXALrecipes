@@ -10,13 +10,15 @@
     <dict>
         <key>NAME</key>
 		<string>JanAI</string>
-        <key>INSTALL_DESTINATION</key>
-        <string>/Applications</string>
     </dict>
     <key>MinimumVersion</key>
     <string>0.5.0</string>
     <key>Process</key>
     <array>
+        <dict>
+            <key>Processor</key>
+            <string>com.github.BIXALbaileywalters.extraprocessors/GetUserHome</string>
+        </dict>
         <dict>
             <key>Processor</key>
             <string>GitHubReleasesInfoProvider</string>
@@ -49,7 +51,7 @@
                     <key>source_item</key>
                     <string>Jan.app</string>
                     <key>destination_path</key>
-                    <string>%INSTALL_DESTINATION%</string>
+                    <string>%user_home%/Applications</string>
                     <key>user</key>
                     <string>root</string>
                     <key>group</key>
