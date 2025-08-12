@@ -55,9 +55,9 @@
                     <key>destination_path</key>
                     <string>%user_home%/Applications</string>
                     <key>user</key>
-                    <string>root</string>
+                    <string>%current_user%</string>
                     <key>group</key>
-                    <string>wheel</string>
+                    <string>staff</string>
                     <key>mode</key>
                     <string>0755</string>
                   </dict>
