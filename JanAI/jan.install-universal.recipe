@@ -5,7 +5,7 @@
     <key>Description</key>
     <string>Downloads and installs Jan.AI for Intel Macs</string>
     <key>Identifier</key>
-    <string>com.github.BIXALBaileyWalters.install.JanAI-x64</string>
+    <string>com.github.BIXALBaileyWalters.install.JanAI-Universal</string>
     <key>Input</key>
     <dict>
         <key>NAME</key>
@@ -27,7 +27,8 @@
                 <key>github_repo</key>
                 <string>menloresearch/jan</string>
                 <key>asset_regex</key>
-                <string>Jan_.*_universal\.dmg$</string> 
+                <string>Jan_.*_universal\.dmg</string>
+                <key>latest_only</key>
             </dict>
         </dict>
         <dict>
