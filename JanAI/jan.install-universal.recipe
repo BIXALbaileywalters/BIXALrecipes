@@ -23,9 +23,9 @@
             <key>Arguments</key>
             <dict>
                 <key>github_repo</key>
-                <string>janhq/jan</string>
+                <string>menloresearch/jan</string>
                 <key>asset_regex</key>
-                <string>jan-mac-x64-.*\.dmg$</string> 
+                <string>Jan_.*_universal\.dmg$</string> 
             </dict>
         </dict>
         <dict>
