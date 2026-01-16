@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>Description</key>
+    <string>Hey there</string>
+    <key>Identifier</key>
+    <string>com.github.BIXALBaileyWalters.install.cloudflarewarp</string>
+    <key>Input</key>
+    <dict>
+        <key>NAME</key>
+		<string>Vonage</string>
+    </dict>
+    <key>MinimumVersion</key>
+    <string>0.5.0</string>
+    <key>ParentRecipe</key>
+	<string>com.github.mikestechshop.download.CloudFlareWarp</string>
+    <key>Process</key>
+    <array>
+        <dict>
+            <key>Processor</key>
+            <string>EndOfCheckPhase</string>
+        </dict>
+        <dict>
+            <key>Processor</key>
+            <string>Installer</string>
+            <key>Arguments</key>
+            <dict>
+                <key>pkg_path</key>
+                <string>%RECIPE_CACHE_DIR%/downloads/CloudFlareWarp.pkg</string>
+                <key>items_to_copy</key>
+            </dict>
+        </dict>
+    </array>
+</dict>
+</plist>
