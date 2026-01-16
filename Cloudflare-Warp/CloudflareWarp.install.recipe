@@ -28,7 +28,6 @@
             <dict>
                 <key>pkg_path</key>
                 <string>%RECIPE_CACHE_DIR%/downloads/CloudFlareWarp.pkg</string>
-                <key>items_to_copy</key>
             </dict>
         </dict>
     </array>
