@@ -5,14 +5,14 @@
 	<key>Description</key>
 	<string>Downloads and installs the current release version of ScreamingFrogSEOSpider.</string>
 	<key>Identifier</key>
-	<string>com.github.BIXALBaileyWalters.install.ScreamingFrogSEO</string>
+	<string>com.github.BIXALBaileyWalters.install.ScreamingFrogSEOx64</string>
 	<key>Input</key>
 	<dict>
 	</dict>
 	<key>MinimumVersion</key>
 	<string>0.6.1</string>
 	<key>ParentRecipe</key>
-	<string>com.github.BIXALBaileyWalters.pkg.ScreamingFrogSEO</string>
+	<string>com.github.BIXALBaileyWalters.pkg.ScreamingFrogSEOx64</string>
 	<key>Process</key>
 	<array>
 		<dict>

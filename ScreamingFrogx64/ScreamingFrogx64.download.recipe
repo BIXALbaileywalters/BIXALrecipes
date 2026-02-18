@@ -10,7 +10,7 @@ To download Apple Silicon use: (https://download\.screamingfrog\.co\.uk/products
 To download Intel use: (https://download\.screamingfrog\.co\.uk/products/seo-spider/ScreamingFrogSEOSpider-([A-Za-z0-9]+(\.[A-Za-z0-9]+)+)-x86_64\.dmg) in the SEARCH_PATTERN variable.
 	 </string>
 	<key>Identifier</key>
-	<string>com.github.thenikola.download.ScreamingFrogSEO</string>
+	<string>com.github.thenikola.download.ScreamingFrogSEOx64</string>
 	<key>Input</key>
 	<dict>
 		<key>NAME</key>
