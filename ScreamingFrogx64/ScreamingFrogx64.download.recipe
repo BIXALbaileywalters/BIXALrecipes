@@ -18,7 +18,7 @@ To download Intel use: (https://download\.screamingfrog\.co\.uk/products/seo-spi
 		<key>SEARCH_PATTERN</key>
 		<string>(https://download\.screamingfrog\.co\.uk/products/seo-spider/ScreamingFrogSEOSpider-([A-Za-z0-9]+(\.[A-Za-z0-9]+)+)-x86_64\.dmg)</string>
 		<key>SEARCH_URL</key>
-		<string>https://www.screamingfrog.co.uk</string>
+		<string>https://www.screamingfrog.co.uk/seo-spider/#download</string>
 	</dict>
 	<key>MinimumVersion</key>
 	<string>0.3.1</string>
