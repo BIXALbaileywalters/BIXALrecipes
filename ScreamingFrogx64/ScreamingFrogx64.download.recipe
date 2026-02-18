@@ -46,7 +46,7 @@ To download Intel use: (https://download\.screamingfrog\.co\.uk/products/seo-spi
 				<string>%DOWNLOAD_URL%</string>
 				<key>curl_opts</key>
                 <array>
-                	<string>--compressed</string>
+                	<string>-L</string>
                 </array>
 			</dict>
 			<key>Processor</key>
