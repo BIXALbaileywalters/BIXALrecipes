@@ -9,9 +9,11 @@
     <key>Input</key>
     <dict>
         <key>APP_FILENAME</key>
-        <string>JamfConnect</string>
+        <string>JamfConnect-%VER%</string>
+		<key>VER</key>
+		<string>3.5.0</string>
         <key>DOWNLOAD_URL</key>
-        <string>https://files.jamfconnect.com/JamfConnect.dmg</string>
+        <string>https://files.jamfconnect.com/JamfConnect-%VER%.dmg</string>
         <key>NAME</key>
         <string>Jamf Connect</string>
     </dict>
@@ -66,6 +68,24 @@
                 </array>
 			</dict>
 		</dict>
+		<dict>
+            <key>Processor</key>
+            <string>InstallFromDMG</string>
+			<key>Arguments</key>
+			<dict>
+				<key>dmg_path</key>
+				<string>%RECIPE_CACHE_DIR%/downloads/%APP_FILENAME%.dmg</string>
+				<key>items_to_copy</key>
+				<array>
+                  	<dict>
+                    	<key>source_item</key>
+                    	<string>Resources/JamfConnectUninstaller.pkg</string>
+                    	<key>destination_path</key>
+                    	<string>%RECIPE_CACHE_DIR%/downloads/</string>
+                  	</dict>
+                </array>
+			</dict>
+		</dict>
         <dict>
 			<key>Processor</key>
 			<string>CodeSignatureVerifier</string>
@@ -73,6 +93,21 @@
 			<dict>
 				<key>input_path</key>
 				<string>%RECIPE_CACHE_DIR%/downloads/JamfConnectLogin.pkg</string>
+				<key>expected_authority_names</key>
+				<array>
+					<string>Developer ID Installer: JAMF Software (483DWKW443)</string>
+					<string>Developer ID Certification Authority</string>
+					<string>Apple Root CA</string>
+				</array>
+			</dict>
+		</dict>
+		<dict>
+			<key>Processor</key>
+			<string>CodeSignatureVerifier</string>
+			<key>Arguments</key>
+			<dict>
+				<key>input_path</key>
+				<string>%RECIPE_CACHE_DIR%/downloads/JamfConnectUninstaller.pkg</string>
 				<key>expected_authority_names</key>
 				<array>
 					<string>Developer ID Installer: JAMF Software (483DWKW443)</string>
