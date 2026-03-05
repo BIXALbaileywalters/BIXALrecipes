@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Description</key>
+	<string></string>
+	<key>Identifier</key>
+	<string>com.github.BIXALbaileywalters.download.aTrain</string>
+	<key>Input</key>
+	<dict>
+		<key>NAME</key>
+		<string>ScreamingFrogSEOSpider</string>
+		<key>SEARCH_PATTERN</key>
+		<string>(/datasets/aTrain-core/installers/resolve/main/MacOS/aTrain_v([A-Za-z0-9]+(\.[A-Za-z0-9]+)+)\.dmg)</string>
+		<key>SEARCH_URL</key>
+		<string>https://huggingface.co/datasets/aTrain-core/installers/tree/main/MacOS</string>
+	</dict>
+	<key>MinimumVersion</key>
+	<string>0.3.1</string>
+	<key>Process</key>
+	<array>
+		<dict>
+			<key>Arguments</key>
+			<dict>
+				<key>re_pattern</key>
+				<string>%SEARCH_PATTERN%</string>
+				<key>url</key>
+				<string>%SEARCH_URL%</string>
+				<key>result_output_var_name</key>
+				<string>DOWNLOAD_URL</string>
+			</dict>
+			<key>Processor</key>
+			<string>URLTextSearcher</string>
+		</dict>
+		<dict>
+			<key>Arguments</key>
+			<dict>
+				<key>filename</key>
+				<string>%NAME%.dmg</string>
+				<key>url</key>
+				<string>%DOWNLOAD_URL%</string>
+				<key>curl_opts</key>
+                <array>
+                </array>
+			</dict>
+			<key>Processor</key>
+			<string>URLDownloader</string>
+		</dict>
+		<dict>
+			<key>Processor</key>
+			<string>EndOfCheckPhase</string>
+		</dict>
+	</array>
+</dict>
+</plist>
