@@ -24,7 +24,7 @@
 			<dict>
 				<key>re_flags</key>
 				<array>
-					<string>DOTALL</string>
+					<string>re.DOTALL</string>
 				</array>
 				<key>re_pattern</key>
 				<string>%SEARCH_PATTERN%</string>
