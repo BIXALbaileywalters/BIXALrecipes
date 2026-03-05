@@ -22,6 +22,10 @@
 		<dict>
 			<key>Arguments</key>
 			<dict>
+				<key>re_flags</key>
+				<array>
+					<string>DOTALL</string>
+				</array>
 				<key>re_pattern</key>
 				<string>%SEARCH_PATTERN%</string>
 				<key>url</key>
