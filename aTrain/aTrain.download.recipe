@@ -13,7 +13,7 @@
 		<key>SEARCH_PATTERN</key>
 		<string>aTrain_v([A-Za-z0-9]+(\.[A-Za-z0-9]+)+)(?!.*aTrain_v)</string>
 		<key>SEARCH_URL</key>
-		<string>https://business-analytics.uni-graz.at/en/research/atrain/download/</string>
+		<string>https://huggingface.co/datasets/aTrain-core/installers/tree/main/MacOS</string>
 	</dict>
 	<key>MinimumVersion</key>
 	<string>0.3.1</string>
