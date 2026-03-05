@@ -11,7 +11,7 @@
 		<key>NAME</key>
 		<string>ScreamingFrogSEOSpider</string>
 		<key>SEARCH_PATTERN</key>
-		<string>(aTrain_v([A-Za-z0-9]+(\.[A-Za-z0-9]+)+))(?!.*aTrain)</string>
+		<string>aTrain_v([A-Za-z0-9]+(\.[A-Za-z0-9]+)+)(?!.*aTrain_v)</string>
 		<key>SEARCH_URL</key>
 		<string>https://business-analytics.uni-graz.at/en/research/atrain/download/</string>
 	</dict>
