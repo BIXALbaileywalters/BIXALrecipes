@@ -19,7 +19,7 @@
 			<key>Arguments</key>
 			<dict>
 				<key>filename</key>
-				<string>%LATEST%.dmg</string>
+				<string>%LATEST%</string>
 				<key>url</key>
 				<string>https://huggingface.co/datasets/aTrain-core/installers/resolve/main/MacOS/%LATEST%</string>
 			</dict>
@@ -30,6 +30,17 @@
 			<key>Processor</key>
 			<string>EndOfCheckPhase</string>
 		</dict>
+		<dict>
+            <key>Processor</key>
+            <string>CodeSignatureVerifier</string>
+            <key>Arguments</key>
+            <dict>
+                <key>input_path</key>
+                <string>%pathname%/aTrain.app</string>
+                <key>requirement</key>
+                <string>identifier "at.atrain.bandas" and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = ZC3J2Z2Q96</string>
+            </dict>
+        </dict>
 	</array>
 </dict>
 </plist>
