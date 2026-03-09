@@ -42,7 +42,7 @@ MUNKI_ICON should be overridden with your icon name.
     <key>MinimumVersion</key>
     <string>0.5.0</string>
     <key>ParentRecipe</key>
-	<string>com.github.BIXALBaileyWalters.download.vonage</string>
+	<string>com.github.BIXALbaileywalters.download.aTrain</string>
     <key>Process</key>
     <array>
         <dict>
