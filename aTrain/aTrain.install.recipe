@@ -33,7 +33,7 @@ descending by tag names according to LooseVersion semantics.
 MUNKI_ICON should be overridden with your icon name.
 </string>
     <key>Identifier</key>
-    <string>com.github.BIXALBaileyWalters.install.vonage</string>
+    <string>com.github.BIXALBaileyWalters.install.aTrain</string>
     <key>Input</key>
     <dict>
         <key>NAME</key>
