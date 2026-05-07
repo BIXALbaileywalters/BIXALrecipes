@@ -26,6 +26,8 @@
                 <string>vscodium/vscodium</string>
                 <key>latest_only</key>
                 <string>True</string>
+                <key>GITHUB_RELEASES_PER_PAGE</key>
+                <string>150</string>
                 <key>asset_regex</key>
                 <string>VSCodium.arm64.*.dmg </string> 
             </dict>
