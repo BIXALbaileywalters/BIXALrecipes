@@ -27,7 +27,7 @@
                 <key>latest_only</key>
                 <string>True</string>
                 <key>asset_regex</key>
-                <string>VSCodium.arm64.*.dmg </string> 
+                <string>VSCodium.arm64.*.dmg</string> 
             </dict>
         </dict>
         <dict>
