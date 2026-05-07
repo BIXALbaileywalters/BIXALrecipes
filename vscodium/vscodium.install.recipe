@@ -81,7 +81,7 @@ MUNKI_ICON should be overridden with your icon name.
             <key>Arguments</key>
             <dict>
                 <key>user_home</key>
-                <string>%user_home%</key>
+                <string>%user_home%</string>
                 <key>app_name</key>
                 <string>%APPNAME%</string>
             </dict>
