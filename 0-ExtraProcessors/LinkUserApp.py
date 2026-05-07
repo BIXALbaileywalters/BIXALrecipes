@@ -21,7 +21,7 @@ from autopkglib import Processor  # pylint: disable=import-error
 __all__ = ["LinkUserApp"]
 
 
-class GetUserHome(Processor):
+class LinkUserApp(Processor):
     """
     This processor returns the current user's Home Directory.
     """
@@ -54,5 +54,5 @@ class GetUserHome(Processor):
 
 
 if __name__ == "__main__":
-    PROCESSOR = GetUserHome()
+    PROCESSOR = LinkUserApp()
     PROCESSOR.execute_shell()
