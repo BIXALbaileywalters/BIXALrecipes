@@ -77,7 +77,7 @@ MUNKI_ICON should be overridden with your icon name.
         </dict>
         <dict>
             <key>Processor</key>
-            <string>com.github.BIXALbaileywalters.extraprocessors/LinkUserspaceApp</string>
+            <string>com.github.BIXALbaileywalters.extraprocessors/LinkUserApp</string>
         </dict>
     </array>
 </dict>
