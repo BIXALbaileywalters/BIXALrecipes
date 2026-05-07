@@ -26,19 +26,19 @@ class LinkUserApp(Processor):
     This processor returns the current user's Home Directory.
     """
 
-    # input_variables = {
-    #     "user_home": {
-    #         "required": True,
-    #         "description": "The user home",
-    #         },
-    #     "app_name": {
-    #         "required": True,
-    #         "description": "App name (ending in .app) we are linking to"
-    #         },
-    # }
-    # output_variables = {}
-    #
-    # description = __doc__
+    input_variables = {
+        "user_home": {
+            "required": True,
+            "description": "The user home",
+            },
+        "app_name": {
+            "required": True,
+            "description": "App name (ending in .app) we are linking to"
+            },
+    }
+    output_variables = {}
+
+    description = __doc__
 
     def main(self):
         """Main process."""
