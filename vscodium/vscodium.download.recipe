@@ -25,6 +25,7 @@
                 <key>github_repo</key>
                 <string>vscodium/vscodium</string>
                 <key>latest_only</key>
+                <boolean>True</boolean>
                 <key>asset_regex</key>
                 <string>VSCodium.arm64.*.dmg </string> 
             </dict>
