@@ -4,6 +4,9 @@
 <dict>
     <key>Description</key>
 	<string>I'm only here so I don't get flagged as incompatible.</string>
+    <key>Input</key>
+    <dict>
+    </dict>
     <key>Identifier</key>
     <string>com.github.BIXALbaileywalters.install.claudeai</string>
     <key>MinimumVersion</key>
