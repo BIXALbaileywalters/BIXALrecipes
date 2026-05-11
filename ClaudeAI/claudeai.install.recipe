@@ -5,7 +5,7 @@
     <key>Description</key>
 	<string>I'm only here so I don't get flagged as incompatible.</string>
     <key>Identifier</key>
-    <string>com.github.BIXALBaileyWalters.install.claudeai</string>
+    <string>com.github.BIXALbaileywalters.install.claudeai</string>
     <key>MinimumVersion</key>
     <string>0.5.0</string>
     <key>ParentRecipe</key>
@@ -26,7 +26,7 @@
             <key>Arguments</key>
             <dict>
                 <key>dmg_path</key>
-                <string>%RECIPE_CACHE_DIR/%NAME%.dmg</string>
+                <string>%RECIPE_CACHE_DIR%/%NAME%.dmg</string>
                 <key>items_to_copy</key>
                 <array>
                   <dict>
