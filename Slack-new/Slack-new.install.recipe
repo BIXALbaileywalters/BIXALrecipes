@@ -34,7 +34,7 @@
                 <array>
                   <dict>
                     <key>source_item</key>
-                    <string>%NAME%</string>
+                    <string>%NAME%.app</string>
                     <key>destination_path</key>
                     <string>%user_home%/Applications</string>
                     <key>user</key>
