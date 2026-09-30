@@ -55,7 +55,7 @@
                 <key>user_home</key>
                 <string>%user_home%</string>
                 <key>app_name</key>
-                <string>%NAME%</string>
+                <string>%NAME%.app</string>
             </dict>
         </dict>
     </array>
