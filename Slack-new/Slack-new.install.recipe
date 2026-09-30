@@ -5,7 +5,7 @@
     <key>Description</key>
     <string>Installs the current release version of Slack. Modified from https://github.com/autopkg/killahquam-recipes/tree/master/Slack</string>
     <key>Identifier</key>
-    <string>com.github.BIXALbaileywalters.install.slack</string>
+    <string>com.github.BIXALbaileywalters.install.slack-new</string>
     <key>Input</key>
     <dict>
     </dict>
