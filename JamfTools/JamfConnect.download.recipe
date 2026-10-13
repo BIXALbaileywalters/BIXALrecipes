@@ -61,7 +61,7 @@
 				<array>
                   	<dict>
                     	<key>source_item</key>
-                    	<string>Resources/JamfConnectLaunchAgent.pkg</string>
+                    	<string>Resources/JamfConnectLogin.pkg</string>
                     	<key>destination_path</key>
                     	<string>%RECIPE_CACHE_DIR%/downloads/</string>
                   	</dict>
@@ -122,7 +122,7 @@
 			<key>Arguments</key>
 			<dict>
 				<key>input_path</key>
-				<string>%RECIPE_CACHE_DIR%/downloads/JamfConnectLaunchAgent.pkg</string>
+				<string>%RECIPE_CACHE_DIR%/downloads/JamfConnectLogin.pkg</string>
 				<key>expected_authority_names</key>
 				<array>
 					<string>Developer ID Installer: JAMF Software (483DWKW443)</string>
